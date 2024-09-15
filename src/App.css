@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Светлый режим по умолчанию */
+.navbar-light .nav-link {
+  color: #000; /* Чёрный цвет для светлого режима */
+}
+
+.navbar-light .nav-link:hover {
+  color: #007bff; /* Синий цвет при наведении */
+}
+
+/* Переопределение для тёмного режима */
+.dark-mode .navbar-light .nav-link {
+  color: #fff !important; /* Белый цвет для тёмного режима с !important */
+}
+
+.dark-mode .navbar-light .nav-link:hover {
+  color: #f0ad4e !important; /* Цвет при наведении в тёмном режиме с !important */
+}
+

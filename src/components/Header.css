@@ -1,0 +1,48 @@
+/* Светлый режим */
+.header-navbar.light {
+    background-color: #f0f0f0;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.header-navbar.light .navbar-brand, 
+.header-navbar.light .nav-link {
+    color: #000;
+}
+
+.header-navbar.light .btn, 
+.header-navbar.light .form-control {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.header-navbar.light .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Тёмный режим */
+.header-navbar.dark {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-navbar.dark .navbar-brand, 
+.header-navbar.dark .nav-link {
+    color: #e0e0e0;
+}
+
+.header-navbar.dark .btn, 
+.header-navbar.dark .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+}
+
+.header-navbar.dark .btn:hover {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+}
+

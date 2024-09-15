@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
@@ -11,10 +11,24 @@ import Register from './pages/Register';
 import InstructorCourses from './pages/instructor/Courses';
 import EditCourse from './pages/instructor/EditCourse';
 import AdminDashboard from './pages/admin/Dashboard';
+import Header from "./components/Header"; 
+import './App.css';
 
 function App() {
+
+  const [theme, setTheme] = useState('light'); 
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <Router>
+      <div className={`app ${theme === 'dark' ? 'dark-mode' : ''}`}>
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        {/* <HeroSection /> */}
+        {/* Другие компоненты */}
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
