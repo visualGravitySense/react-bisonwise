@@ -28,7 +28,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding-top: 70px; /* В зависимости от высоты шапки */
+
 }
+
+
 
 h1 {
   font-size: 3.2em;
@@ -66,3 +70,110 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.header-navbar {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #000;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.header-navbar .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  padding-left: 1rem;
+}
+
+.header-navbar .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.header-navbar .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+.header-navbar .form-control {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.header-navbar .form-control::placeholder {
+  color: #666;
+}
+
+.header-navbar .btn-outline-success {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.header-navbar .btn-outline-success:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-navbar .btn {
+  border: 2px solid #000;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.header-navbar .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-navbar .nav-dropdown {
+  font-size: 1.2rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.header-navbar .nav-dropdown .dropdown-item {
+  text-transform: uppercase;
+}
+
+.header-navbar .nav-dropdown .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-navbar .theme-toggle-btn {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  box-shadow: 2px 2px 0 #000;
+  text-transform: uppercase;
+}
+
+.header-navbar .theme-toggle-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-navbar .nav-link {
+  font-weight: bold;
+  color: #000;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.header-navbar .nav-link:hover {
+  border-bottom: 2px solid #000;
+}
+
+
