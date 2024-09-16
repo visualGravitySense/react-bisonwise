@@ -1,4 +1,4 @@
-.hero-section {
+/* .hero-section {
   background: url('your-image-url.jpg') no-repeat center center;
   background-size: cover;
   color: white;
@@ -13,16 +13,16 @@
 
 .hero-section .btn {
   margin: 0.5rem;
-}
+} */
 
 
 
-/* .hero-section {
+ .hero-section {
   padding: 3rem 0;
-  background-color: #f0f0f0; */
+  background-color: #f0f0f0; 
   /* color: #000; */
   /* font-family: 'Courier New', Courier, monospace; */
-  /* border-bottom: 2px solid #000;
+  /* border-bottom: 2px solid #000; */
   text-align: center;
 } 
 
@@ -82,48 +82,48 @@
   background-color: #000;
   color: #fff;
   box-shadow: 5px 5px 0 #000;
-} */
+} 
 
 /* Тёмный режим */
-/* .hero-section.bg-dark {
+.hero-section.dark-mode {
   background-color: #1a1a1a;
   color: #e0e0e0;
   border-bottom: 2px solid #e0e0e0;
 }
 
-.hero-section.bg-dark h1 {
+.hero-section.dark-mode h1 {
   color: #fff;
   text-shadow: 3px 3px 0 #fff;
 }
 
-.hero-section.bg-dark h2 {
+.hero-section.dark-mode h2 {
   color: #ccc;
 }
 
-.hero-section.bg-dark p {
+.hero-section.dark-mode p {
   color: #bbb;
 }
 
-.hero-section.bg-dark .btn-primary {
+.hero-section.dark-mode .btn-primary {
   background-color: #fff;
   border: 2px solid #fff;
   color: #1a1a1a;
   box-shadow: 3px 3px 0 #fff;
 }
 
-.hero-section.bg-dark .btn-primary:hover {
+.hero-section.dark-mode .btn-primary:hover {
   background-color: #ccc;
   box-shadow: 5px 5px 0 #fff;
 }
 
-.hero-section.bg-dark .btn-outline-secondary {
+.hero-section.dark-mode .btn-outline-secondary {
   border: 2px solid #fff;
   color: #fff;
 }
 
-.hero-section.bg-dark .btn-outline-secondary:hover {
+.hero-section.dark-mode .btn-outline-secondary:hover {
   background-color: #fff;
   color: #1a1a1a;
   box-shadow: 5px 5px 0 #fff;
-} */
+}
 

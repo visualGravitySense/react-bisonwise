@@ -5,6 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 .featured-courses h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -63,4 +64,45 @@
     background: #555;
     box-shadow: 5px 5px 0 #000;
     color: #fff;
+}
+
+/* Стили для Dark Mode */
+.dark-mode .featured-courses {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .featured-courses h2 {
+    color: #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.dark-mode .course-card {
+    background: #333;
+    border: 2px solid #666;
+    box-shadow: 5px 5px 0 #666;
+}
+
+.dark-mode .course-card:hover {
+    box-shadow: 8px 8px 0 #666;
+}
+
+.dark-mode .course-card h3 {
+    border-bottom: 2px solid #888;
+}
+
+.dark-mode .course-card p {
+    color: #ccc;
+}
+
+.dark-mode .course-card .btn-learn-more {
+    background: #666;
+    border: 2px solid #888;
+    color: #e0e0e0;
+    box-shadow: 3px 3px 0 #888;
+}
+
+.dark-mode .course-card .btn-learn-more:hover {
+    background: #888;
+    box-shadow: 5px 5px 0 #888;
 }

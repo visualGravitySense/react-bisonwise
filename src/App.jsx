@@ -30,8 +30,7 @@ function App() {
         {/* Другие компоненты */}
       </div>
       <Routes>
-      <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
-
+        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/cart" element={<Cart />} />
