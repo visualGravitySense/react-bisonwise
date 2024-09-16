@@ -14,7 +14,7 @@ const Header = ({ theme, toggleTheme }) => {
 
       {/* Кнопка для мобильной версии */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
+ 
       {/* Меню */}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
