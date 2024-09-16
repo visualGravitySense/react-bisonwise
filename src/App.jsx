@@ -26,11 +26,12 @@ function App() {
     <Router>
       <div className={`app ${theme === 'dark' ? 'dark-mode' : ''}`}>
         <Header theme={theme} toggleTheme={toggleTheme} />
-        {/* <HeroSection /> */}
+        
         {/* Другие компоненты */}
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
+
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/cart" element={<Cart />} />

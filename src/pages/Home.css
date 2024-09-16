@@ -2,4 +2,9 @@
 .home-page {
     /* Your styles for the home page */
   }
+
+.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
   
