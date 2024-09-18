@@ -1,0 +1,119 @@
+/* Footer.css */
+.footer {
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    border-bottom: 2px solid #000;
+  }
+  
+  .footer-social {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-social a {
+    color: #000;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #555;
+  }
+  
+  .footer-subscribe form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-subscribe input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .footer-subscribe button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-subscribe button:hover {
+    background-color: #333;
+  }
+  
+  .footer-info {
+    font-size: 0.875rem;
+  }
+  
+  .footer-info p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Dark Mode */
+  .footer.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  .footer.dark-mode .footer-links a {
+    color: #f0f0f0;
+  }
+  
+  .footer.dark-mode .footer-links a:hover {
+    border-bottom-color: #f0f0f0;
+  }
+  
+  .footer.dark-mode .footer-social a {
+    color: #f0f0f0;
+  }
+  
+  .footer.dark-mode .footer-social a:hover {
+    color: #bbb;
+  }
+  
+  .footer.dark-mode .footer-subscribe input,
+  .footer.dark-mode .footer-subscribe button {
+    border-color: #f0f0f0;
+  }
+  
+  .footer.dark-mode .footer-subscribe button {
+    background-color: #333;
+  }
+  
+  .footer.dark-mode .footer-subscribe button:hover {
+    background-color: #555;
+  }
+  
