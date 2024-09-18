@@ -12,6 +12,7 @@ import InstructorCourses from './pages/instructor/Courses';
 import EditCourse from './pages/instructor/EditCourse';
 import AdminDashboard from './pages/admin/Dashboard';
 import Header from "./components/Header"; 
+import Footer from "./components/Footer"; 
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <Router>
       <div className={`app ${theme === 'dark' ? 'dark-mode' : ''}`}>
         <Header theme={theme} toggleTheme={toggleTheme} />
+        
         
         {/* Другие компоненты */}
       </div>
@@ -43,6 +45,7 @@ function App() {
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         {/* Add other routes here */}
       </Routes>
+      <Footer theme={theme} toggleTheme={toggleTheme} />
     </Router>
   );
 }
