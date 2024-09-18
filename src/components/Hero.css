@@ -67,22 +67,7 @@
   box-shadow: 5px 5px 0 #000;
 }
 
-.hero-section .btn-outline-secondary {
-  background-color: transparent;
-  border: 2px solid #000;
-  color: #000;
-  text-transform: uppercase;
-  box-shadow: 3px 3px 0 #000;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-}
 
-.hero-section .btn-outline-secondary:hover {
-  background-color: #000;
-  color: #fff;
-  box-shadow: 5px 5px 0 #000;
-} 
 
 /* Тёмный режим */
 .hero-section.dark-mode {
@@ -127,3 +112,19 @@
   box-shadow: 5px 5px 0 #fff;
 }
 
+.hero-section .btn-outline-secondary {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 #000;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.hero-section .btn-outline-secondary:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 5px 5px 0 #000;
+} 

@@ -1,0 +1,90 @@
+/* StudentTestimonials.css */
+.testimonials-section {
+    padding: 3rem 0;
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
+  
+  .testimonials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 0 #000;
+    padding: 1rem;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 0 #000;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-info {
+    text-align: left;
+  }
+  
+  .testimonial-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial-course {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Dark Mode */
+  .testimonials-section.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  .testimonials-section.dark-mode h2 {
+    border-color: #f0f0f0;
+  }
+  
+  .testimonials-section.dark-mode .testimonial-item {
+    background-color: #333;
+    color: #f0f0f0;
+    border-color: #fff;
+  }
+  
+  .testimonials-section.dark-mode .testimonial-item:hover {
+    box-shadow: 8px 8px 0 #f0f0f0;
+  }
+  
+  .testimonials-section.dark-mode .testimonial-image {
+    border: 2px solid #f0f0f0;
+  }
+  
