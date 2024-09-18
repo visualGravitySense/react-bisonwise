@@ -25,3 +25,4 @@ const Home = ({ theme, toggleTheme }) => {
 };
 
 export default Home;
+
