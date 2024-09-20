@@ -3,6 +3,10 @@
     background: #f0f0f0;
     color: #000;
     font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-wrap: wrap; /* Чтобы карточки переносились, если не хватает места */
+    justify-content: center; /* Выравнивание по центру */
 }
 
 

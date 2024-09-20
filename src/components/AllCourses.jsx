@@ -4,43 +4,69 @@ import { Button, Card, Container, Row, Col } from 'react-bootstrap'; // Импо
 import './FeaturedCourses.css';
 import CourseFilters from "./CourseFilters";  
 import CourseSorting from './CourseSorting';
+import CourseCard from './CourseCard';
 import Pagination from './Pagination';
 
 const AllCourses = ({ theme }) => {
   
   const courses = [
     {
-      id: 1, // Уникальный идентификатор
-      title: 'Курс по React',
-      description: 'Изучите основы React и создавайте мощные веб-приложения.',
-      instructor: 'Иван Иванов',
-      rating: '4.5',
-      price: '4990 ₽',
+      id: 1,
+      title: 'React Course',
+      description: 'Learn React and build powerful web applications.',
+      price: '4990',
+      image: 'https://via.placeholder.com/150' // Sample image placeholder
     },
     {
       id: 2,
-      title: 'Курс по Vue',
-      description: 'Овладейте основами Vue.js для создания интерактивных веб-приложений.',
-      instructor: 'Анна Петрова',
-      rating: '4.7',
-      price: '5290 ₽',
+      title: 'JavaScript Essentials',
+      description: 'Master the fundamentals of JavaScript.',
+      price: '2990',
+      image: 'https://via.placeholder.com/150'
     },
     {
-      id: 3, // Уникальный идентификатор
-      title: 'Курс по React',
-      description: 'Изучите основы React и создавайте мощные веб-приложения.',
-      instructor: 'Иван Иванов',
-      rating: '4.5',
-      price: '4990 ₽',
+      id: 3,
+      title: 'React Course',
+      description: 'Learn React and build powerful web applications.',
+      price: '4990',
+      image: 'https://via.placeholder.com/150' // Sample image placeholder
     },
     {
       id: 4,
-      title: 'Курс по Vue',
-      description: 'Овладейте основами Vue.js для создания интерактивных веб-приложений.',
-      instructor: 'Анна Петрова',
-      rating: '4.7',
-      price: '5290 ₽',
+      title: 'JavaScript Essentials',
+      description: 'Master the fundamentals of JavaScript.',
+      price: '2990',
+      image: 'https://via.placeholder.com/150'
     },
+    {
+      id: 5,
+      title: 'React Course',
+      description: 'Learn React and build powerful web applications.',
+      price: '4990',
+      image: 'https://via.placeholder.com/150' // Sample image placeholder
+    },
+    {
+      id: 6,
+      title: 'JavaScript Essentials',
+      description: 'Master the fundamentals of JavaScript.',
+      price: '2990',
+      image: 'https://via.placeholder.com/150'
+    },
+    {
+      id: 7,
+      title: 'React Course',
+      description: 'Learn React and build powerful web applications.',
+      price: '4990',
+      image: 'https://via.placeholder.com/150' // Sample image placeholder
+    },
+    {
+      id: 8,
+      title: 'JavaScript Essentials',
+      description: 'Master the fundamentals of JavaScript.',
+      price: '2990',
+      image: 'https://via.placeholder.com/150'
+    },
+    // More courses here
     // Добавьте другие курсы в этот массив
   ];
 
@@ -61,8 +87,15 @@ const AllCourses = ({ theme }) => {
       <CourseSorting />
       
       <div className="featured-courses">
-        <h2>Все курсы</h2>
-        <div className="d-flex flex-wrap justify-content-center">
+        {/* <h2>Все курсы</h2> */}
+
+        {courses.map((course) => (
+          <CourseCard key={course.id} course={course} />
+        ))}
+
+        {/* <CourseCard key={course.id} course={course} /> */}
+        
+        {/* <div className="d-flex flex-wrap justify-content-center">
           {courses.map((course) => (
             <div key={course.id} className="course-card">
               <h3>{course.title}</h3>
@@ -74,7 +107,7 @@ const AllCourses = ({ theme }) => {
             </div>
             
           ))}
-        </div>
+        </div> */}
         <Pagination 
             // currentPage={currentPage} 
             // totalPages={totalPages} 
@@ -88,3 +121,4 @@ const AllCourses = ({ theme }) => {
 };
 
 export default AllCourses;
+
