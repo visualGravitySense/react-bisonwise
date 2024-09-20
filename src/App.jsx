@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/Courses/CourseDetail';
 import Cart from './pages/Cart';
-import About from './pages/About';
+
 import Favourites from './pages/Favourites';
 import About from './pages/About';
 import Checkout from './pages/Checkout';
