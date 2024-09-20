@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/Courses/CourseDetail';
 import Cart from './pages/Cart';
+import About from './pages/About';
 import Favourites from './pages/Favourites';
 import Checkout from './pages/Checkout';
 import Profile from './pages/Profile';
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/courses" element={<Courses theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/favourites" element={<Favourites theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/cart" element={<Cart />} />
