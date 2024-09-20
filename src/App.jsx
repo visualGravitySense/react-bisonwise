@@ -6,6 +6,7 @@ import CourseDetail from './pages/Courses/CourseDetail';
 import Cart from './pages/Cart';
 import About from './pages/About';
 import Favourites from './pages/Favourites';
+import About from './pages/About';
 import Checkout from './pages/Checkout';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
@@ -16,6 +17,7 @@ import AdminDashboard from './pages/admin/Dashboard';
 import Header from "./components/Header"; 
 import Footer from "./components/Footer"; 
 import './App.css';
+// import './App.scss';
 
 function App() {
 
@@ -38,6 +40,7 @@ function App() {
         <Route path="/courses" element={<Courses theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/favourites" element={<Favourites theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
