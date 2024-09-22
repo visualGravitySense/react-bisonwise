@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
-import './AboutSection.css';
+import './AboutSection.scss';
 
 const AboutSection = ({ theme }) => {
   // URL изображения из JSONPlaceholder
