@@ -19,3 +19,26 @@ $font-family-main: 'Courier New', Courier, monospace;
 $font-size-large: 3rem;
 $font-size-medium: 2rem;
 $font-size-small: 1.25rem;
+
+// _variables.scss
+
+// Light theme colors
+$primary-color-light: #000;
+$background-light: #f0f0f0;
+$text-color-light: #333;
+
+// Dark theme colors
+$primary-color-dark: #fff;
+$background-dark: #1a1a1a;
+$text-color-dark: #e0e0e0;
+
+// Определение текущей темы
+$primary-color: $primary-color-light;
+$background-color: $background-light;
+$text-color: $text-color-light;
+
+.dark-mode {
+  $primary-color: $primary-color-dark;
+  $background-color: $background-dark;
+  $text-color: $text-color-dark;
+}
