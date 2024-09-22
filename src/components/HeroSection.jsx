@@ -1,7 +1,7 @@
 import React from 'react';
 import ChartModal from '../components/ChartModal';
 import { Container, Button } from 'react-bootstrap';
-import './Hero.css'; 
+import './Hero.scss'; 
 
 
 const HeroSection = ({ theme }) => {
