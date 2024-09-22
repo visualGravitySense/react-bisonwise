@@ -1,95 +1,115 @@
-// hero-section.scss
-@import 'variables';
-@import 'mixins';
+@import './variables';
+@import './mixins';
 
 .hero-section {
-  padding: 3rem 0;
-  background-color: $background-light;
+  position: relative;
+  padding: 5rem 0;
+  background-color: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
   text-align: center;
+  overflow: hidden;
+}
 
   h1, h2 {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    font-weight: bold;
   }
 
   h1 {
-    font-size: $font-size-large;
-    color: $primary-color;
-    @include box-shadow($box-shadow-size, $primary-color);
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    // color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 2;
+    // @include box-shadow(10px, $primary-color);
   }
 
   h2 {
-    font-size: $font-size-medium;
-    color: #666;
+    font-size: 2rem;
+    // color: #ffffffcc;
+    font-weight: 600;
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
   }
 
   p {
-    font-size: $font-size-small;
-    color: $text-color-light;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+    font-size: 1.25rem;
+    // color: #ffffffcc;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 2;
   }
 
-  .btn-primary {
-    background-color: $primary-color;
-    border: $border-width solid $primary-color;
-    color: $secondary-color;
-    @include box-shadow($box-shadow-size, $primary-color);
-    @include transition(background-color, box-shadow);
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+  // .btn-primary {
+  //   background-color: $primary-color;
+  //   border: 2px solid $primary-color;
+  //   color: $secondary-color;
+  //   @include box-shadow(5px, $primary-color);  }
+
+
+  .custom-btn {
+    background-color: #ff7a85;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: $hover-color;
-      @include box-shadow($box-shadow-large-size, $primary-color);
+      background-color: #ff4f6f;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
   }
 
-  .btn-outline-secondary {
-    background-color: transparent;
-    border: $border-width solid $primary-color;
-    color: $primary-color;
-    @include box-shadow($box-shadow-size, $primary-color);
-    @include transition(background-color, color, box-shadow);
-
-    &:hover {
-      background-color: $primary-color;
-      color: $secondary-color;
-      @include box-shadow($box-shadow-large-size, $primary-color);
-    }
-  }
+/* Добавляем геометрические формы */
+.hero-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: url('/path-to-your-shapes.svg') no-repeat center center / cover;
+  opacity: 0.15;
 }
 
 /* Тёмный режим */
 .hero-section.dark-mode {
   background-color: $background-dark;
-  color: $text-color-dark;
-  border-bottom: $border-width solid $text-color-dark;
+  // background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
 
   h1 {
     color: $secondary-color;
-    @include box-shadow($box-shadow-size, $secondary-color);
+    // @include box-shadow(10px, $secondary-color);  
   }
 
   h2 {
-    color: #ccc;
+    color: $secondary-color;
   }
 
-  p {
-    color: #bbb;
-  }
+  // .btn-primary {
+  //   background-color: $secondary-color;
+  //   border: 2px solid $secondary-color;
+  //   color: $background-dark;
+  //   @include box-shadow(5px, $secondary-color);  }
 
-  .btn-primary {
-    background-color: $secondary-color;
-    border: $border-width solid $secondary-color;
-    color: $background-dark;
-    @include box-shadow($box-shadow-size, $secondary-color);
+  //   .custom-btn {
+  //     background-color: #333;
+  //     color: #ffffff;
 
-    &:hover {
-      background-color: #ccc;
-      @include box-shadow($box-shadow-large-size, $secondary-color);
-    }
-  }
+  //     &:hover {
+  //       background-color: #555;
+  //     }
+  //   }
 }
+
+

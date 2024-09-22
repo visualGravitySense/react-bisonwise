@@ -1,8 +1,16 @@
 // _mixins.scss
 
+// @mixin box-shadow($size, $color) {
+//   box-shadow: $size $size 0 $color;
+// }
+
+// @include box-shadow(10px, $secondary-color);
+
 @mixin box-shadow($size, $color) {
-  box-shadow: $size $size 0 $color;
+  box-shadow: #{$size} #{$size} 0 #{$color};
 }
+
+
 
 // @mixin transition($properties) {
 //     // You need to wrap the declaration in a rule
@@ -16,3 +24,5 @@
 @mixin transition($properties...) {
     transition: $properties 0.3s ease;
   }
+
+// @include box-shadow(10px, $secondary-color);
