@@ -12,3 +12,7 @@
 // @mixin transition($properties) {
 //     transition: $properties 0.3s ease;
 // }
+
+@mixin transition($properties...) {
+    transition: $properties 0.3s ease;
+  }

@@ -1,0 +1,29 @@
+// forms.scss
+@import 'variables';
+@import 'mixins';
+
+.form-group {
+  margin-bottom: 1.5rem;
+
+  label {
+    font-size: 1rem;
+    color: $text-color-light;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: $border-width solid $primary-color;
+    @include transition(border-color);
+
+    &:focus {
+      border-color: $hover-color;
+    }
+  }
+
+  .form-error {
+    color: $hover-color;
+    font-size: 0.875rem;
+  }
+}

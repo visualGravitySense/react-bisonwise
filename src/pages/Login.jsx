@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
 import './LoginRegister.css';
+// import '../styles/forms.scss';
 
 const Login = ({ theme }) => {
   const [isLogin, setIsLogin] = useState(true);
