@@ -73,11 +73,12 @@
   /* Dark Mode */
 .popular-courses.dark-mode {
     background-color: #1e1e1e;
-    color: #f0f0f0;
+    color: #ffffff;
   }
   
   .popular-courses.dark-mode h2 {
-    color: #f0f0f0;
+    border-bottom: 3px solid #fff;
+    background-color: #9a9a9a;
     border-bottom: 3px solid #fff;
   }
   
