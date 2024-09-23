@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import './Header.css';
+import './Header.scss';
 
 const Header = ({ theme, toggleTheme }) => {
   return (
