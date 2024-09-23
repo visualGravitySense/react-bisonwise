@@ -91,8 +91,10 @@
       color: #e0e0e0;
 
       h2 {
-          color: #e0e0e0;
-          border-bottom: 2px solid #e0e0e0;
+          color: #e4e4e4;
+          border-bottom: 2px solid #333;
+          padding: 1rem;
+          background-color: #474747;
           filter: drop-shadow(2px 2px 0 #fff); // Яркий эффект тени
       }
   }
