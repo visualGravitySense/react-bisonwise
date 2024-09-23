@@ -70,15 +70,7 @@ const AllCourses = ({ theme }) => {
     // Добавьте другие курсы в этот массив
   ];
 
-  // const CoursePage = () => {
-  //   const [currentPage, setCurrentPage] = useState(1);
-  //   const totalPages = 10; // Допустим, у нас 10 страниц курсов
-  
-  //   // Функция для обработки изменения страницы
-  //   const handlePageChange = (page) => {
-  //     setCurrentPage(page);
-  //     // Логика для загрузки курсов для текущей страницы
-  //   };
+
 
   return (
     <section className={`featured-courses ${theme === 'dark' ? 'dark-mode' : ''}`}>
@@ -93,21 +85,7 @@ const AllCourses = ({ theme }) => {
           <CourseCard key={course.id} course={course} />
         ))}
 
-        {/* <CourseCard key={course.id} course={course} /> */}
         
-        {/* <div className="d-flex flex-wrap justify-content-center">
-          {courses.map((course) => (
-            <div key={course.id} className="course-card">
-              <h3>{course.title}</h3>
-              <p>{course.description}</p>
-              <p>Инструктор: {course.instructor}</p>
-              <p>Рейтинг: {course.rating}</p>
-              <p>Цена: {course.price}</p>
-              <Button className="btn-learn-more" href={`/courses/${course.id}`}>Подробнее</Button>
-            </div>
-            
-          ))}
-        </div> */}
         <Pagination 
             // currentPage={currentPage} 
             // totalPages={totalPages} 

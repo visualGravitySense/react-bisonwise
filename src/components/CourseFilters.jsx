@@ -97,3 +97,4 @@ const CourseFilters = ({ onFilter }) => {
 };
 
 export default CourseFilters;
+
