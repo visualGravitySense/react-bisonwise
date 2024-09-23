@@ -16,7 +16,7 @@ import EditCourse from './pages/instructor/EditCourse';
 import AdminDashboard from './pages/admin/Dashboard';
 import Header from "./components/Header"; 
 import Footer from "./components/Footer"; 
-import './App.css';
+// import './App.css';
 import './App.scss';
 
 function App() {

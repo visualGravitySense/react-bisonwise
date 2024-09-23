@@ -1,7 +1,7 @@
 // AllCourses.jsx
 import React from 'react';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap'; // Импортируем необходимые компоненты Bootstrap
-import './FeaturedCourses.css';
+import './FeaturedCourses.scss';
 import CourseFilters from "./CourseFilters";  
 import CourseSorting from './CourseSorting';
 import CourseCard from './CourseCard';
