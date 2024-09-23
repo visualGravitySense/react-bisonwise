@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './StudentTestimonials.css';
 
-const testimonials = [
-  {
-    name: 'Иван Иванов',
-    course: 'Веб-разработка',
-    description: 'Отличный курс! Узнал много нового и полезного для своей работы.',
-    imageUrl: 'https://via.placeholder.com/100'
-  },
-  {
-    name: 'Мария Петрова',
-    course: 'Графический дизайн',
-    description: 'Очень довольна курсом. Профессиональные преподаватели и актуальные материалы.',
-    imageUrl: 'https://via.placeholder.com/100'
-  },
-  {
-    name: 'Алексей Смирнов',
-    course: 'Python для начинающих',
-    description: 'Курс очень полезный и доступный для новичков. Всем рекомендую!',
-    imageUrl: 'https://via.placeholder.com/100'
-  }
-];
-
 const StudentTestimonials = ({ theme }) => {
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+
+        // Map the fetched data to your desired testimonial structure
+        const mappedTestimonials = data.slice(0, 3).map(user => ({
+          name: user.name,
+          course: 'Курс не указан', // Placeholder for course
+          description: `Студент ${user.name} остался доволен обучением!`, // Placeholder description
+          imageUrl: 'https://via.placeholder.com/100', // Placeholder image
+        }));
+
+        setTestimonials(mappedTestimonials);
+      } catch (error) {
+        console.error('Error fetching testimonials:', error);
+      }
+    };
+
+    fetchTestimonials();
+  }, []);
+
   return (
     <section className={`testimonials-section ${theme === 'dark' ? 'dark-mode' : ''}`}>
       <div className="testimonials-container">

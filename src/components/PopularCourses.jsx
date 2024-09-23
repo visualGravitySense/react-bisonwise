@@ -1,31 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './PopularCourses.css';
 
 const PopularCourses = ({ theme }) => {
-  const courses = [
-    {
-      title: 'Основы графического дизайна',
-      instructor: 'Анна Петрова',
-      rating: '4.7',
-      students: '1200',
-      price: '3990 ₽',
-    },
-    {
-      title: 'Full-Stack разработка',
-      instructor: 'Дмитрий Иванов',
-      rating: '4.9',
-      students: '1800',
-      price: '5990 ₽',
-    },
-    {
-      title: 'Музыкальная композиция',
-      instructor: 'Екатерина Смирнова',
-      rating: '4.5',
-      students: '800',
-      price: '4990 ₽',
-    },
-    // Добавьте другие курсы
-  ];
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const data = await response.json();
+        
+        // Map the fetched data to your desired structure
+        const mappedCourses = data.slice(0, 3).map(post => ({
+          title: post.title,
+          instructor: 'Неизвестный', // Placeholder for instructor
+          rating: (Math.random() * (5 - 4) + 4).toFixed(1), // Random rating between 4.0 and 5.0
+          students: Math.floor(Math.random() * 2000) + 500, // Random number of students
+          price: `${Math.floor(Math.random() * (7000 - 3000) + 3000)} ₽`, // Random price between 3000 and 7000
+        }));
+        
+        setCourses(mappedCourses);
+      } catch (error) {
+        console.error('Error fetching courses:', error);
+      }
+    };
+
+    fetchCourses();
+  }, []);
 
   return (
     <section className={`popular-courses ${theme === 'dark' ? 'dark-mode' : ''}`}>
