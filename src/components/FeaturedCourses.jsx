@@ -1,7 +1,7 @@
 // FeaturedCourses.jsx
 import React from 'react';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap'; // Импортируем необходимые компоненты Bootstrap
-import './FeaturedCourses.css';
+import './FeaturedCourses.scss';
 
 const FeaturedCourses = ({ theme }) => {
   const courses = [

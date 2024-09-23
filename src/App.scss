@@ -1,1 +1,106 @@
 @import '/node_modules/bootstrap/scss/bootstrap';
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  
+    .logo {
+      height: 6em;
+      padding: 1.5em;
+      will-change: filter;
+      transition: filter 300ms;
+  
+      &:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+      }
+  
+      &.react:hover {
+        filter: drop-shadow(0 0 2em #61dafbaa);
+      }
+    }
+  
+    @keyframes logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    @media (prefers-reduced-motion: no-preference) {
+      a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+      }
+    }
+  
+    .card {
+      padding: 2em;
+    }
+  
+    .read-the-docs {
+      color: #888;
+    }
+  }
+  
+  .navbar-light {
+    .nav-link {
+      color: #000; /* Чёрный цвет для светлого режима */
+  
+      &:hover {
+        color: #007bff; /* Синий цвет при наведении */
+      }
+    }
+  }
+  
+  .dark-mode {
+    .navbar-light {
+      .nav-link {
+        color: #fff !important; /* Белый цвет для тёмного режима */
+  
+        &:hover {
+          color: #007bff !important; /* Цвет при наведении в тёмном режиме */
+        }
+      }
+    }
+  
+    .home-page {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+  
+      .hero-section,
+      .featured-courses,
+      .course-categories,
+      .popular-courses,
+      .promo-banners,
+      .about-section,
+      .student-testimonials {
+        background-color: #333;
+        color: #f0f0f0;
+      }
+    }
+  
+    .app {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+  
+      .header,
+      .footer {
+        background-color: #333;
+        color: #f0f0f0;
+      }
+    }
+  }
+  
+  .home-page {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .app {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
