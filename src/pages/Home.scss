@@ -1,0 +1,22 @@
+/* Home.scss */
+.home-page {
+  background-color: #ffffff;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+
+    .hero-section,
+    .featured-courses,
+    .course-categories,
+    .popular-courses,
+    .promo-banners,
+    .about-section,
+    .student-testimonials {
+      background-color: #333;
+      color: #f0f0f0;
+    }
+  }
+}
